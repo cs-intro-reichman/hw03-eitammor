@@ -1,4 +1,3 @@
-/** String processing exercise 2. */
 public class UniqueChars {
     public static void main(String[] args) {  
         String str = args[0];
@@ -11,7 +10,22 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+		int len = s.length();
+		String newStr = "";
+		
+		for (int i = 0; i<len; i++)
+		{
+			if (s.charAt(i) == 32)
+			{
+				newStr += (char)(s.charAt(i));
+			}
+			else if ((newStr.indexOf(s.charAt(i))) == -1)
+			{
+				newStr += (char)(s.charAt(i));
+
+			}
+
+		}
+        return newStr;
     }
 }
