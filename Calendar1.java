@@ -17,7 +17,6 @@ public class Calendar1 {
 		// Advances the date and the day-of-the-week from 1/1/1900 till 31/12/1999, inclusive.
 	    // Prints each date dd/mm/yyyy in a separate line. If the day is a Sunday, prints "Sunday".
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
-		int toStop = Integer.parseInt(args[0]);
 	    int debugDaysCounter = 0; 
 		int numOfSun = 0;
 	 	while (year<2000) {
@@ -33,7 +32,7 @@ public class Calendar1 {
 	 		debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
-	 		if (debugDaysCounter==toStop) { 
+	 		if (false) { 
 	 			break;
 	 		}
         }
