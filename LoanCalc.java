@@ -41,10 +41,10 @@ public class LoanCalc {
     public static double bruteForceSolver(double loan, double rate, int n, double epsilon) {  
     	iterationCounter = 0;
     	double g = loan / n;
-    	double left = loan;
+    	//double left = loan;
 
-    	while(left > 0){
-    		left = endBalance(loan, rate, n, g);
+    	while(endBalance(loan, rate, n, g) > 0){
+    		//left = ;
     		g = g + epsilon;
     		iterationCounter++;
     	}
