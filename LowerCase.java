@@ -1,4 +1,4 @@
-public class lowercase {
+public class LowerCase {
     public static void main(String[] args) {  
         String str = args[0];
 		String strL = lowerCase(str);
